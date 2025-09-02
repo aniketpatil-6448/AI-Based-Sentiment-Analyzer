@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); 
+
+h1{
+  font-family:"Josefin Sans",sans-serif;
+  text-align: center;
+  padding-top: 25px;
+  padding: 10px;
+  width:100%;
+  font-size: 120px;
+  color:rgb(212, 212, 212);
+}
+ 
+
+
+#particles-js {
+  background:#030002;
+   
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+.container
+{
+  width:800px;
+  height: 800px;
+  margin:5vw;
+
+}
+
+.Parent
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 500px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
+
+.tweet{
+  padding-bottom:40px;
+}
+
+@media screen and (max-width:1025px)
+{
+  h1{
+    font-size:100px;
+    color:white;
+  }
+  .Parent{
+    flex-direction: column;
+  }
+  .TweetBox{
+    width:100vw;
+    margin:0px 10px;
+  }
+  button{
+    text-align: center;
+  }
+  .container{
+    width:80vw;
+    height:60vh;
+  }
+  .TweetBox{
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (max-width:720px)
+{
+  h1{
+    font-size:70px;
+  }
+}
+@media screen and (max-width:480px )
+{
+  h1{
+    font-size:50px;
+  }
+  .container{
+    height:40vh;
+  }
+}
+
+@media screen and (max-width:350px)
+{
+  h1{
+    font-size:40px;
+    padding:0;
+  }
+  .container{
+    width:300px;
+    height:300px;
+  }
+}

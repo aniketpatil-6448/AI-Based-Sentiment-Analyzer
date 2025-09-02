@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Sentiment Analysis</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Redressed&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+    .samsung {
+      background: url("../static/pictures/Samsung.jpg")#856ecd;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    .LG {
+      background: url("../static/pictures/lg.jpg")#6e62f3;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+
+    .apple {
+      background: url("../static/pictures/iphone.jpg")#5f33a7;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+
+    .blackberry {
+      background: url("../static/pictures/blackberry2.jpg")rgba(99, 16, 38, 0.868);
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    .oneplus {
+      background: url("../static/pictures/1plus.jpg")rgba(120, 12, 29, 0.333);
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: "Potta One";
+    }
+
+    section h2 {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 30px 32px;
+      font-size: 45px;
+    }
+
+
+    section:hover {
+      flex: 2;
+    }
+
+    h2 {
+      background: black;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .twitter {
+      width: 80px;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+   h1 {
+      font-family:'Josefin Sans', sans-serif;
+      /* 'Redressed', cursive;*/
+
+   }
+
+    .Heading {
+      position: relative;
+      background-color: #1a1c20;
+      font-size: 40px;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    section {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: gray;
+      flex: 1;
+      transition: all 0.5s;
+    }
+
+    @media screen and (max-width:789px) {
+      h1 {
+        font-size: 40px;
+        margin: auto;
+      }
+
+      section {
+        flex-direction: column;
+        height: 50vh;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+
+
+    }
+
+    @media screen and (max-width:481px) {
+      h1 {
+        font-size: 35px;
+      }
+
+      section h2 {
+        font-size: 40px;
+      }
+    }
+
+    @media screen and (max-width:432px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      section h2 {
+        font-size: 35px;
+        padding: 10px 15px;
+      }
+
+    }
+
+    @media screen and (max-width:388px) {
+      h1 {
+        font-size: 25px;
+      }
+
+      section h2 {
+        font-size: 25px;
+        padding: 26px 28px;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Heading">
+    <img class="twitter" src="../static/pictures/SA-icon.png" alt="">
+    <h1> Sentiment Analyzer</h1>
+
+  </div>
+  <div class="container">
+    <section class="samsung">
+      <h2><a href="/samsung">Samsung</a></h2>
+    </section>
+
+    <section class="apple">
+      <h2> <a href="/apple">Apple</a></h2>
+    </section>
+
+    <section class="LG">
+      <h2><a href="/LG">LG</a></h2>
+    </section>
+
+    <section class="blackberry">
+      <h2><a href="/blackberry">Blackberry</a></h2>
+
+    </section>
+    <section class="oneplus">
+      <h2><a href="/oneplus">Oneplus</a></h2>
+
+    </section>
+  </div>
+</body>
+
+</html>
